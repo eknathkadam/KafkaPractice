@@ -22,7 +22,7 @@ public class ProducerDemo {
 
         KafkaProducer<String,String> producer = new KafkaProducer<String, String>(properties);
 
-        ProducerRecord<String,String> producerRecord = new ProducerRecord<>("ORDER_PROCESSING_COMPLETED","Hi from Java class");
+        ProducerRecord<String,String> producerRecord = new ProducerRecord<>("ORDER_PROCESSING_COMPLETED","Hi from Java class!!!");
         producer.send(producerRecord);
         producer.flush();
         producer.close();
