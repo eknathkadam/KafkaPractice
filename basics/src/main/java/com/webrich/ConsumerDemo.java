@@ -20,7 +20,7 @@ public class ConsumerDemo {
     public static void main(String[] args) {
         log.info("I am a Kafka Consumer");
 
-        String groupId = "order-processing-group";
+        String groupId = "order-processing-group-3";
         String topicId = "ORDER_PROCESSING_COMPLETED";
 
         Properties properties = new Properties();

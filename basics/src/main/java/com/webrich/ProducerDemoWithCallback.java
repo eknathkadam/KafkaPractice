@@ -20,7 +20,7 @@ public class ProducerDemoWithCallback {
 
         KafkaProducer<String,String> producer = new KafkaProducer<String, String>(properties);
 
-        for(int i=0;i<10;i++){
+        for(int i=0;i<100000000;i++){
             String topic =  "ORDER_PROCESSING_COMPLETED";
             String value = "Hi from Java "+i;
             String key = "id_"+i;
